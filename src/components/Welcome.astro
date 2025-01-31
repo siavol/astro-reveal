@@ -1,27 +1,10 @@
 ---
-import 'reveal.js/dist/reveal.css';
-import 'reveal.js/dist/theme/black.css';
-
+import Presentation from './Presentation.astro';
 import Slide from './Slide.astro';
 ---
 
-<div class="reveal">
-  <div class="slides">
-    <Slide>Slide 1</Slide>
-    <Slide>Slide 2</Slide>
-  </div>
-</div>
-
-<script>
-  import Reveal from 'reveal.js';
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const deck = new Reveal({
-      transition: 'slide',
-    });
-    deck.initialize();
-  });
-</script>
-
-<style>
-</style>
+<Presentation>
+  <Slide>Slide 1</Slide>
+  <Slide>Slide 2</Slide>
+  <Slide>Slide 3</Slide>
+</Presentation>
