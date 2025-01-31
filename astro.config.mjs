@@ -1,8 +1,9 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import vercelServerless from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://siavol.github.io',
-    base: 'astro-reveal-demo',
+    output: 'server',
+    adapter: vercelServerless(),
 });
