@@ -9,6 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.2.3"
+    "astro": "^5.2.3",
+    "reveal.js": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/reveal.js": "^5.0.5"
   }
 }
