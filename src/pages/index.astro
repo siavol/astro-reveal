@@ -1,11 +1,13 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Presentation from '../components/Presentation.astro';
+import Slide from '../components/Slide.astro';
 ---
 
 <Layout>
-	<Welcome />
+  <Presentation>
+    <Slide>Slide 1</Slide>
+    <Slide>Slide 2</Slide>
+    <Slide>Slide 3</Slide>
+  </Presentation>
 </Layout>
