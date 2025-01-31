@@ -2,12 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import Presentation from '../components/Presentation.astro';
 import Slide from '../components/Slide.astro';
+import { Content as Slide2 } from '../content/slides/slide2.md';
 ---
 
 <Layout>
   <Presentation>
     <Slide>Slide 1</Slide>
-    <Slide>Slide 2</Slide>
+    <Slide><Slide2 /></Slide>
     <Slide>Slide 3</Slide>
   </Presentation>
 </Layout>
